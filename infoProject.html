@@ -13,31 +13,32 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="./assets/css/style-info.css">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="styleSheet" href="assets/css/styles.css" />
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <nav class="header__nav">
         <ul class="menu menu--principal">
           <li class="menu__item">
-            <a class="menu__link" href="#home">
+            <a class="menu__link" href="./index.html">
               <span class="menu__text">Home</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#projetos">
+            <a class="menu__link" href="./index.html#projetos">
               <span class="menu__text">Projetos</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#Sobre">
+            <a class="menu__link" href="./index.html#sobre">
               <span class="menu__text">Sobre</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#Contatos">
+            <a class="menu__link" href="./index.html#contatos">
               <span class="menu__text">Contatos</span>
             </a>
           </li>
@@ -84,36 +85,15 @@
       </ul>
     </nav>
     </header>
+    
 
-    <main id="home">
-      <div class="main__content1">
-        <h1><b>Soluçoes Criativas &</b> Desenvolvimento Front-end</h1>
+    <main>
+      <div class="main__content1" id="test">
+        <h1><b>Nome do Projeto</h1>
         <p>
-          Gabriel Da Silva vasconcelos, Rio de Janeiro-RJ, Desenvolvedor
-          FrontEnd e FullStack
+          Descrição do projeto
         </p>
-
-        <ul class="menu menu--social">
-          <li>
-            <a class="menu__link" href="">
-              <i class="menu__icon bi bi-github"></i>
-            </a>
-          </li>
-          <li>
-            <a class="menu__link" href="">
-              <i class="menu__icon bi bi-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a class="menu__link" href="">
-              <i class="menu__icon bi bi-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <button class="btn btn--primary">
-          <span>Ver projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
+        
       </div>
       <div class="main__content2">
         <iframe
@@ -127,9 +107,14 @@
           allowfullscreen
         ></iframe>
       </div>
+
+        <button class="btn btn--primary btnInfo" id="btnInfo">
+          <span>Ver projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>
     </main>
     <section class="Skills">
-      <h2>Conhecimento nas principais Tecnologias do Mercado</h2>
+      <h2>Tecnologias Utilizadas</h2>
       <ul class="Skills_list">
         <li class="skills__item">
           <img
@@ -169,84 +154,7 @@
         </li>
       </ul>
     </section>
-    <section class="projetos" id="projetos">
-      <section class="title">
-        <h1>Projetos</h1>
-        <small>
-          Alguns dos projetos desenvolvidos durante meus estudos e carreira, com
-          foco em responsividade e acessibilidade
-        </small>
-      </section>
-
-      <section class="projeto">
-        <section id="refazendo_youtube">
-          <div class="infoprojeto">
-            <div class="title">
-              <h2>Refazendo a Tela do Youtube</h2>
-              <small>
-                Site desenvolvido Durante o estudo de Desenvolvimento Web Com
-                Foco Em responsividade e CSS
-              </small>
-            </div>
-
-            <div class="btn">
-              <button type="button" class="btn btn--primary" id="Infobtn" onclick="idInfo(this)">
-                <a
-                  href="./infoProject.html"
-                  rel="noopener noreferrer"
-                  --
-                  Impede
-                  que
-                  ataque
-                  de
-                  pishing
-                  ou
-                  redirecionamentos
-                  aconteçam
-                  no
-                  seu
-                  codigo
-                  --
-                >
-                  <span>Ver Projeto</span>
-                  <i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </button>
-              <button type="button" class="btn btn--primary">
-                <a
-                  href="https://github.com/GutsCarioka/Refazendo_Tela_Youtube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  --
-                  Impede
-                  que
-                  ataque
-                  de
-                  pishing
-                  ou
-                  redirecionamentos
-                  aconteçam
-                  no
-                  seu
-                  codigo
-                  --
-                >
-                  <span>Ver Projeto</span>
-                  <i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </button>
-            </div>
-          </div>
-          <figure>
-            <img
-              src="./assets/Images/Projetos/Replica Youtube/Youtube.png"
-              alt="Print demonstrativo do projeto"
-              title="Imagem demosntrativa do Site"
-            />
-          </figure>
-        </section>
-      </section>
-    </section>
+    
 
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/Info.js"></script>
