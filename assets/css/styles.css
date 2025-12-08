@@ -274,7 +274,7 @@ main {
 }
 
 .skills__logo {
-  height: 2.4;
+  height: 2.4rem;
 }
 
 .btn {
@@ -350,7 +350,9 @@ footer p {
   .Skills {
     padding: 6.27rem 6rem 2rem 1rem;
     margin-top: -6rem;
+    
   }
+
 }
 @media (min-width: 1200px) {
   main {
