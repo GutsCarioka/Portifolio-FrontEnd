@@ -315,7 +315,7 @@ footer p {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     position: fixed;
     border-bottom: 1px solid var(--primary-border-color);
@@ -354,7 +354,7 @@ footer p {
   }
 
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   main {
     padding: 12rem 6rem;
   }
@@ -382,7 +382,7 @@ footer p {
     height: 2rem;
   }
 }
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
   }
