@@ -52,15 +52,17 @@ i {
 }
 b {
   font-weight: 400;
+  color: var(--text-color);
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 200;
+  font-size: 1.5rem;
+  font-weight: 100px;
 }
 p {
   font-size: 1.25rem;
   text-align: justify;
+  color: var(--text-color);
 }
 
 h1,
@@ -69,12 +71,11 @@ h3 {
   font-family: "League Spartan", Courier, monospace;
   text-transform: uppercase;
   color: var(--title-color);
-  font-size: 200;
+  font-size: 5vh;
 }
 figure {
   margin: 0;
   padding: 0;
-  border: #0b0b0f solid;
 }
 
 .header {
@@ -116,25 +117,24 @@ figure {
   position: fixed;
   right: 0;
   bottom: 0;
+  z-index: 10;
   justify-content: space-between;
   border-top: 1px solid var(--primary-border-color);
 }
 
-.menu--mobile .menu__link {
+.menu__link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-self: center;
-  padding: 0.5 1rem;
   gap: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .menu__link.active .menu__icon,
 .menu__link.active .menu__text .menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
   color: var(--primary-color);
-  font: weight 600;
+  font-weight: 600px;
 }
 
 .menu__icon,
@@ -165,76 +165,66 @@ figure {
   gap: 2rem;
   padding: 2.5rem 1rem;
 }
+
+/* ===================== PROJETOS ===================== */
 .projetos {
   display: flex;
-  row-gap: 2rem;
-  justify-content: center;
-  padding: 2rem 1rem;
+  gap: 2rem;
   flex-direction: column;
+  z-index: 1;
 }
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+
 .title h1 {
   font-size: 2.5rem;
   text-transform: none;
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: center;
 }
-.projeto img {
-  width: 80%;
-}
+
+/* Card Projeto */
 #refazendo_youtube figure {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
   justify-items: center;
-  justify-content: start;
-  border: #0b0b0f solid;
-  width: 50%;
 }
 .projeto {
   gap: 1rem;
   display: flex;
   flex-direction: column;
 }
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.projeto img {
+  width: 70vw;
+  display: block;
+  margin-top: 1rem;
 }
 
 #refazendo_youtube {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-items: start;
-  border: red solid;
+  gap: 1.5rem;
   width: 100%;
-  height: 100%;
 }
 
+/* Informações do Projeto */
 .infoprojeto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 0.5rem;
-  height: 30vw;
-  border: blue solid;
-  align-items: center;
-  justify-content: center;
+  gap: 1rem;
 }
 .infoprojeto h2 {
   font-size: 1.5rem;
 }
-.infoprojeto .btn {
-  width: 80%;
-}
 
 .buttons {
   display: flex;
-  flex-direction: row;
-  justify-self: end;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
+
 .main__content1 {
   display: flex;
   flex-direction: column;
@@ -246,15 +236,14 @@ figure {
 
 .main__content2 iframe {
   width: 100%;
-  height: 80%;
-  min-height: 20vh;
+  height: 100%;
   aspect-ratio: 16/9;
-  border: orangered solid 2px;
 }
 .main__content2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 5000px;
 }
 .Skills {
   display: flex;
@@ -295,7 +284,7 @@ figure {
 .skills__logo {
   height: 2.4rem;
 }
-
+/* Botoes */
 .btn {
   display: flex;
   justify-content: center;
@@ -303,7 +292,8 @@ figure {
   gap: 0.625rem;
   width: 30vw;
   background: transparent;
-  border-radius: 3.125rem;
+  border-radius: 3rem;
+  border: 1px solid var(--primary-color);
   padding: 0.875rem 1rem;
   transition: ease-in-out 0.3s;
   cursor: pointer;
@@ -356,7 +346,7 @@ footer p {
     min-width: 30%;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4.75rem;
   }
   main {
     padding: 8rem 6rem 4rem 6rem;
@@ -366,17 +356,22 @@ footer p {
     flex-direction: row;
     align-items: center;
   }
+  #refazendo_youtube figure {
+    width: 100%;
+  }
   .main__content1 {
     display: flex;
-    width: 100%;
-    max-width: 120rem;
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .Skills {
     padding: 6.27rem 6rem 2rem 1rem;
     margin-top: -9rem;
+  }
+  .projeto img {
+    width: 40vw;
+    display: block;
+    margin-top: 1rem;
   }
 }
 
@@ -412,7 +407,6 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    border: #0b0b0f solid;
     width: 50%;
   }
 }
