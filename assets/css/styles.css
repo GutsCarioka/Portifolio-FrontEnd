@@ -60,7 +60,7 @@ h1 {
   font-weight: 100px;
 }
 p {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-align: justify;
   color: var(--text-color);
 }
@@ -200,6 +200,7 @@ figure {
   width: 70vw;
   display: block;
   margin-top: 1rem;
+  justify-self: center;
 }
 
 #refazendo_youtube {
@@ -280,7 +281,9 @@ figure {
   border: 1px solid var(--secundary-border-color);
   border-radius: 50rem;
 }
-
+section.Skills {
+  margin-top: 20px;
+}
 .skills__logo {
   height: 2.4rem;
 }
@@ -325,6 +328,12 @@ footer p {
   text-align: center;
 }
 
+/* Sobre mim */
+.sobre__content {
+  vertical-align: -webkit-baseline-middle;
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   .header {
     position: fixed;
@@ -358,6 +367,19 @@ footer p {
   }
   #refazendo_youtube figure {
     width: 100%;
+  }
+  .projeto section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    min-width: 100%;
+    gap: 2rem;
+  }
+  section figure,
+  section img {
+    width: 50vw;
+    max-width: 500px;
   }
   .main__content1 {
     display: flex;

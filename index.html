@@ -70,7 +70,7 @@
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#Sobre">
+            <a class="menu__link" href="#sobre">
               <i class="menu__icon bi bi-person"></i>
               <span class="menu__text">Sobre</span>
             </a>
@@ -115,18 +115,43 @@
           <i class="bi bi-arrow-down-right"></i>
         </button>
       </div>
-      <div class="main__content2">
-        <iframe
-          width="1700"
-          height="574"
-          src="https://www.youtube.com/embed/LXb3EKWsInQ"
-          title="COSTA RICA IN 4K 60fps HDR (ULTRA HD)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <!--================== SOBRE  =======================-->
+      <section class="sobre" id="sobre">
+        <div class="sobre__content">
+          <div class="sobre__info">
+            <h2>Um pouco sobre mim!</h2>
+            <p>
+              Olá! Meu nome é Gabriel da Silva Vasconcelos, tenho 24 anos e sou
+              formado em Análise e Desenvolvimento de Sistemas, com conclusão em
+              dezembro de 2024, pela Faculdade Impacta de Tecnologia, em São
+              Paulo. Possuo experiência em desenvolvimento backend, utilizando
+              Java e Python, além de atuação com Power Apps, desenvolvimento de
+              soluções internas, suporte técnico e projetos de automação,
+              incluindo vivência em empresas multinacionais. Sou comunicativo,
+              adaptável, tenho inglês intermediário e estou em busca de
+              oportunidades nas áreas de desenvolvimento backend e frontend.
+              Desde muito jovem, sempre tive grande interesse por tecnologia e
+              programação, o que me motivou a escolher essa área como carreira e
+              a buscar constante evolução profissional.
+            </p>
+
+            <p>
+              Ao longo da minha jornada acadêmica, tive a oportunidade de
+              aprender diversas linguagens de programação, frameworks e
+              ferramentas que me ajudaram a desenvolver minhas habilidades
+              técnicas. Sou dedicado, proativo e sempre busco estar atualizado
+              com as últimas tendências do mercado de tecnologia.
+            </p>
+
+            <p>
+              Estou entusiasmado para aplicar meus conhecimentos em projetos
+              desafiadores e contribuir para o sucesso da equipe em que eu fizer
+              parte. Estou aberto a novas oportunidades e ansioso para crescer
+              profissionalmente na área de desenvolvimento de software.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <section class="Skills">
@@ -174,9 +199,9 @@
     <section class="projetos" id="projetos">
       <header class="title">
         <h1>Projetos</h1>
-        <small>
+        <p>
           Projetos desenvolvidos com foco em responsividade e acessibilidade
-        </small>
+        </p>
       </header>
 
       <article class="projeto">
@@ -316,8 +341,26 @@
         </section>
       </article>
     </section>
-    <!--================== SOBRE  =======================-->
-
+    <footer>
+      <h1>Contato!</h1>
+      <p>Sinta-se à vontade para entrar em contato comigo!</p>
+      <section class="contact" id="contatct">
+        <ul>
+          <li>
+            <label for="name">Name: </label>
+            <input type="text" id="name" />
+          </li>
+          <li>
+            <label for="email">Email: </label>
+            <input type="email" id="email" />
+          </li>
+          <li>
+            <label for="message">Message: </label>
+            <textarea id="message"></textarea>
+          </li>
+        </ul>
+      </section>
+    </footer>
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/Info.js"></script>
   </body>
