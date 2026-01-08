@@ -32,12 +32,12 @@
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#Sobre">
+            <a class="menu__link" href="#sobre">
               <span class="menu__text">Sobre</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#Contatos">
+            <a class="menu__link" href="#contatos">
               <span class="menu__text">Contatos</span>
             </a>
           </li>
@@ -45,11 +45,13 @@
       </nav>
 
       <div class="header__brand">
-        <img
-          class="brand__logo"
-          src="./assets/Images/Logo_Temporaria.png"
-          alt="Logo"
-        />
+        <a href="#home" class="menu__link">
+          <img
+            class="brand__logo"
+            src="./assets/Images/Logo_Temporaria.png"
+            alt="Logo"
+          />
+        </a>
       </div>
       <div class="header__toggle">
         <i id="toggleTheme" class="bi bi-sun"></i>
@@ -111,8 +113,10 @@
           </li>
         </ul>
         <button class="btn btn--primary">
-          <span>Ver projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
+          <a href="#projetos">
+            <span>Ver projetos</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </a>
         </button>
       </div>
       <!--================== SOBRE  =======================-->
@@ -341,24 +345,34 @@
         </section>
       </article>
     </section>
-    <footer>
+    <!-- +====================== Contato ==========================+ -->
+    <footer id="contatos">
       <h1>Contato!</h1>
       <p>Sinta-se à vontade para entrar em contato comigo!</p>
-      <section class="contact" id="contatct">
+      <section class="contact" id="contact">
         <ul>
           <li>
             <label for="name">Name: </label>
             <input type="text" id="name" />
           </li>
+          <br />
           <li>
             <label for="email">Email: </label>
             <input type="email" id="email" />
           </li>
+          <br />
           <li>
             <label for="message">Message: </label>
             <textarea id="message"></textarea>
           </li>
+          <br />
         </ul>
+        <div id="submit">
+          <button class="btn btn--primary" type="submit">
+            <span>Enviar</span>
+            <i class="bi bi-envelope-paper"></i>
+          </button>
+        </div>
       </section>
     </footer>
     <script src="./assets/js/scripts.js"></script>
