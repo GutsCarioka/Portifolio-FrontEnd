@@ -221,7 +221,7 @@
               foco em CSS e responsividade.
             </p>
 
-            <div class="buttons">
+            <div class="buttons" id="btn1">
               <a href="./infoProject.html" class="btn btn--primary">
                 <span>Detalhes</span>
                 <i class="bi bi-box-arrow-up-right"></i>
@@ -353,31 +353,38 @@
       <h1>Contato!</h1>
       <p>Sinta-se à vontade para entrar em contato comigo!</p>
       <section class="contact" id="contact">
-        <ul>
-          <li>
-            <label for="name">Name: </label>
-            <input type="text" id="name" />
-          </li>
+        <form
+          action="mailto:modestiagabriel@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name: </label>
+          <input type="text" id="name" />
           <br />
-          <li>
-            <label for="email">Email: </label>
-            <input type="email" id="email" />
-          </li>
+          <label for="email">Email: </label>
+          <input type="email" id="email" />
           <br />
-          <li>
-            <label for="message">Message: </label>
-            <textarea id="message"></textarea>
-          </li>
+          <label for="message">Message: </label>
+          <textarea id="message"></textarea>
           <br />
-        </ul>
-        <div id="submit">
-          <button class="btn btn--primary" type="submit">
-            <span>Enviar</span>
-            <i class="bi bi-envelope-paper"></i>
-          </button>
-        </div>
+          <section>
+            <div id="submit">
+              <button class="btn btn--primary" type="submit">
+                <span>Enviar</span>
+                <i class="bi bi-envelope-paper"></i>
+              </button>
+            </div>
+            <div id="apagar">
+              <button class="btn btn--primary" type="reset">
+                <span>Apagar</span>
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </section>
+        </form>
       </section>
     </footer>
+
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/Info.js"></script>
   </body>
