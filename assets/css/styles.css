@@ -177,9 +177,9 @@ figure {
 
 .projeto section {
   display: flex;
-
   justify-content: space-between;
   margin: 0;
+  margin-left: 3dvw;
   padding: 0;
 }
 .title {
@@ -310,7 +310,8 @@ section.Skills {
   transition: ease-in-out 0.3s;
   cursor: pointer;
   width: auto;
-  min-width: 10dvw;
+  min-width: 12dvw;
+  color: var(--text-color);
 }
 .projeto .btn {
   flex-direction: row;
@@ -352,9 +353,9 @@ footer {
   gap: 1rem;
   padding: 4rem 1rem 2rem 1rem;
   border-top: 3px solid var(--primary-border-color);
-  max-width: 80rem;
+  max-width: 90rem;
   text-align: right;
-  width: 95%;
+  width: 100%;
   border-radius: 5px;
   margin: 5rem auto 0 auto;
 }
