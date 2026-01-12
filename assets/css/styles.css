@@ -346,18 +346,36 @@ footer p {
   text-align: center;
 }
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 4rem 1rem 2rem 1rem;
-  border-top: 3px solid var(--primary-border-color);
-  max-width: 90rem;
-  text-align: right;
+  min-width: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+footer form {
   width: 100%;
-  border-radius: 5px;
-  margin: 5rem auto 0 auto;
+  max-width: 30rem;
+}
+footer label,
+footer input,
+footer textarea {
+  margin: 1rem;
+  color: var(--text-color);
+  background: var(--secondary-bg-color);
+  border: 0.125rem solid var(--secundary-border-color) transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s ease-in-out;
+  box-shadow: 0.3s;
+}
+footer input,
+footer textarea {
+  display: block;
+}
+footer input,
+footer textarea footer button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
 }
 footer section {
   display: flex;
@@ -365,9 +383,40 @@ footer section {
   align-items: center;
   justify-content: center;
 }
+
 label {
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--text-color);
+}
+footer input:hover,
+footer input:focus,
+footer textarea:hover,
+footer textarea:focus {
+  outline: none;
+  border-color: #1d90f5;
+  box-shadow: 0 0 0 0.3125rem #26344a;
+}
+textarea {
+  min-width: 12.5rem;
+  resize: vertical;
+}
+footer button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #1d90f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer button:hover,
+footer button:focus {
+  outline: none;
+  background: #1d90f5;
+}
+footer button:disabled {
+  cursor: not-allowed;
+  background: gray;
 }
 
 @media (min-width: 768px) {

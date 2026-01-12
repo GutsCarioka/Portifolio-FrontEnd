@@ -11,3 +11,11 @@ function changeTheme() {
   toggleTheme.classList.toggle("bi-moon-stars");
 }
 toggleTheme.addEventListener("click", changeTheme);
+
+class formSubmit {
+  constructor(settings) {
+    this.settings = settings;
+    this.form = document.querySelector(settings.form);
+    this.formButton = document.querySelector(settings.button);
+  }
+}
