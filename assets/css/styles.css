@@ -397,9 +397,10 @@ footer textarea:focus {
   border-color: #1d90f5;
   box-shadow: 0 0 0 0.3125rem #26344a;
 }
-textarea {
-  min-width: 12.5rem;
-  resize: vertical;
+footer textarea {
+  min-width: 25.5rem;
+  min-height: 10rem;
+  resize: horizontal;
 }
 footer button {
   border: none;
@@ -418,7 +419,14 @@ footer button:disabled {
   cursor: not-allowed;
   background: gray;
 }
-
+.success {
+  color: green;
+  text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .header {
     position: fixed;
