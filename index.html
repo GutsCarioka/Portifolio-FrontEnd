@@ -222,7 +222,7 @@
             </p>
 
             <div class="buttons" id="btn1">
-              <a href="./infoProject.html" class="btn btn--primary">
+              <a href="./infoProject.html?project=refazendo_youtube" class="btn btn--primary">
                 <span>Detalhes</span>
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
@@ -257,7 +257,7 @@
             </p>
 
             <div class="buttons">
-              <a href="./infoProject.html" class="btn btn--primary">
+              <a href="./infoProject.html?project=diabetes" class="btn btn--primary">
                 <span>Detalhes</span>
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
@@ -291,7 +291,7 @@
             </p>
 
             <div class="buttons">
-              <a href="./infoProject.html" class="btn btn--primary">
+              <a href="./infoProject.html?project=yu-gi-oh" class="btn btn--primary">
                 <span>Detalhes</span>
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
@@ -322,7 +322,8 @@
             <p>Pokedex com integração com a PokeAPI</p>
 
             <div class="buttons">
-              <a href="./infoProject.html" class="btn btn--primary">
+              <!-- Adicionando o acesso ao projeto no Href usando a nomeclatura "?project=pokedex " -->
+              <a href="./infoProject.html?project=pokedex" class="btn btn--primary">
                 <span>Detalhes</span>
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
@@ -353,12 +354,7 @@
       <h1>Contato!</h1>
       <p>Sinta-se à vontade para entrar em contato comigo!</p>
       <section class="contact" id="contact">
-        <form
-          action="https://formsubmit.co/ajax/emtudonoob@gmail.com"
-          method="post"
-          enctype="text/plain"
-          data-form
-        >
+        <form action="mailto:emtudonoob@gmail.com" method="post" data-form>
           <label for="name">Name: </label>
           <input type="text" id="name" name="name" required />
           <br />
