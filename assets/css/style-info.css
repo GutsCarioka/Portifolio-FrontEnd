@@ -2,3 +2,7 @@
   margin-top: 10px;
   justify-self: center;
 }
+
+#project-image{
+  max-width: 60dvw;
+}

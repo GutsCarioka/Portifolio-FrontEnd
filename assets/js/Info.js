@@ -24,12 +24,14 @@ const projects = {
     description:
       "Jogo de Jokenpo criado para explicar conceitos de lógica de programação.",
     image: "./assets/Images/Projetos/YU-GI-OH.png",
+    github: "https://github.com/GutsCarioka/Criando_Jogo_de_cartas_yu_gi_oh",
   },
 
   pokedex: {
     title: "PokeDex",
     description: "Pokedex com integração com a PokeAPI.",
     image: "./assets/Images/Projetos/PokeDex.png",
+    github: "https://github.com/GutsCarioka/ProjetoPokeDex",
   },
 };
 
@@ -38,6 +40,9 @@ if (projects[projectId]) {
   document.getElementById("project-title").textContent =
     projects[projectId].title;
 
+  document.getElementById("project-github").onclick = () => {
+    window.open(projects[projectId].github, "_blank");
+  };
   document.getElementById("project-description").textContent =
     projects[projectId].description;
 

@@ -113,12 +113,14 @@ figure {
 .menu__item {
   width: 100%;
 }
+
 .menu--mobile {
   width: 100vw;
   position: fixed;
   right: 0;
   bottom: 0;
   z-index: 10;
+  margin-top: 1rem;
   justify-content: space-between;
   border-top: 1px solid var(--primary-border-color);
 }
@@ -346,14 +348,15 @@ footer p {
   text-align: center;
 }
 footer {
-  min-width: 100dvh;
   display: grid;
   place-items: center;
   padding: 1rem;
+  justify-content: center;
+  margin: 0rem;
+  margin-bottom: 4rem;
 }
 footer form {
   width: 100%;
-  max-width: 30rem;
 }
 footer label,
 footer input,
@@ -362,7 +365,7 @@ footer textarea {
   color: var(--text-color);
   background: var(--secondary-bg-color);
   border: 0.125rem solid var(--secundary-border-color) transparent;
-  border-radius: 1.125rem;
+  border-radius: 0.5rem;
   transition: border-color 0.3s ease-in-out;
   box-shadow: 0.3s;
 }
@@ -398,7 +401,7 @@ footer textarea:focus {
   box-shadow: 0 0 0 0.3125rem #26344a;
 }
 footer textarea {
-  min-width: 25.5rem;
+  min-width: 20.5rem;
   min-height: 10rem;
   resize: horizontal;
 }
@@ -473,6 +476,10 @@ footer button:disabled {
   section img {
     width: 50vw;
     max-width: 500px;
+  }
+  footer {
+    margin: 0px;
+    min-width: 100dvh;
   }
   .main__content1 {
     display: flex;
